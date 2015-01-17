@@ -1,4 +1,4 @@
-class Auctions < ActiveRecord::Migration
+class CreateAuctions < ActiveRecord::Migration
   def change
     create_table :auctions do |t|
       t.datetime :end_time

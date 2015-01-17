@@ -1,4 +1,4 @@
-class ShippingInformations < ActiveRecord::Migration
+class CreateShippingInformations < ActiveRecord::Migration
   def change
     create_table :shipping_informations do |t|
       t.string :country
