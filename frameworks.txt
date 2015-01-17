@@ -1,0 +1,13 @@
+https://gumroad.com/
+https://slingput.com/
+https://www.shopify.com/
+https://tictail.com/
+http://magento.com/
+http://www.makeuseof.com/tag/build-your-own-ebay-style-auction-site-with-wordpress/
+http://www.webidsupport.com/
+
+payments
+--
+https://www.braintreepayments.com/
+https://stripe.com/docs/checkout/guides/flask / https://stripe.com/docs/checkout/guides/rails
+
