@@ -40,3 +40,5 @@ gem 'bcrypt-ruby'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'tzinfo'
+gem 'tzinfo-data'
