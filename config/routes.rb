@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :users
+
+  get 'signup' => 'users#new'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  root 'sessions#new'
   # root 'static_pages#home'
 
   # get 'static_pages/faq'
