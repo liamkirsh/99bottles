@@ -62,9 +62,9 @@ ActiveRecord::Schema.define(version: 20150118121640) do
     t.integer  "winning_price"
     t.integer  "auction_id"
     t.integer  "user_id"
-    t.boolean  "paid"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.boolean  "paid",          default: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
   create_table "products", force: :cascade do |t|
