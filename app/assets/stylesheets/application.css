@@ -16,5 +16,12 @@
 
  */
 body {
-	background-color: red;
+	background-color: #fefada;
+}
+
+.rows{
+	color:#722302;
+}
+.beer-card {
+	width: 275;
 }

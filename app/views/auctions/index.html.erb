@@ -8,15 +8,17 @@
 	.nty-n-bottles-tile h3{
 		font-size: 1.2rem;
 	}
+	#beer-card {
+		width: 300 !important;
+	}
 </style>
-
 
 <div class="row">
 	<div class="small-12 columns">
 		<ul class="auction-tiles small-block-grid-1 medium-block-grip-3 large-block-grid-4">
 			<!-- loop starts here (the list items are the things that are going to be looped) -->
 		<% @auctions.each do |auction| %>	
-			<li>
+			<li id="beer-card">
 			<a href="/auctions/<%= auction.id%>">		
 				<div id="card">
 					<div class="row panel nty-n-bottles-tile">
