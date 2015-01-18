@@ -39,7 +39,7 @@ image_link: "http://i.imgur.com/BBrI0IC.png"
 )
 
 Product.create(
-name: "Founders Breakfast Stout",
+name: "Founders Breakfast",
 description: "Brewed with flaked oats, bitter and 
 sweetened imported chocolates, Sumatra and Kona coffee. ",
 image_link: "http://i.imgur.com/NPVLbvI.jpg"
@@ -70,7 +70,7 @@ image_link: "http://i.imgur.com/r6SfISm.jpg"
 )
 
 Product.create(
-name: "Cane & Ebel - Two Brothers Brewing Company",
+name: "Cane & Ebel - Two Brothers Brewery",
 description: "Dry, but with a creamy touch of Thai Palm Sugar and the spicy tang 
 of Rye, all balanced by loads of the wackiest new Hops we could lay our hands
 on. Yep, it’s an Orignal. And that’s no Sin. ",

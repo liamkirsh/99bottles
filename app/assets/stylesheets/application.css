@@ -23,5 +23,13 @@ body {
 	color:#722302;
 }
 .beer-card {
-	width: 275;
+	width: 275px;
+}
+
+.nty-n-bottles-tile .panel{
+	display: block;
+	margin: 25px;
+}
+.beer-tiles {
+	margin-top: 15px;
 }
