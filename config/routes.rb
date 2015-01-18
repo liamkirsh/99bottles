@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :users
   resources :auctions
   resources :orders
+  resources :bids
+  
   get 'signup' => 'users#new'
   
   get 'login' => 'sessions#new'
