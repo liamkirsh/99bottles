@@ -29,6 +29,8 @@ gem 'spring',        group: :development
 gem 'bcrypt-ruby', '~> 3.1.5'
 
 gem "faker", "~> 1.4.3"
+
+gem 'foundation-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
