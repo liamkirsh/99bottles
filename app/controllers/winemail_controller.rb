@@ -3,6 +3,6 @@ class WinemailController < ApplicationController
    end
 
    def create
-      WinMailer.user_won("liam.kirsh@gmail.com").deliver
+      WinMailer.user_won("99bottles.20.choicefresh@spamgourmet.com").deliver
    end
 end
