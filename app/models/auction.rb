@@ -14,4 +14,13 @@ class Auction < ActiveRecord::Base
   def higest_bid
     self.bids.pluck(:offer_price).max || self.minimum_price - 1
   end
+
+  def highest_bidder
+    highest_bidder = self.bids.order("offer_price DESC").first
+    if highest_bidder
+      return highest_bidder.user
+    else
+      return false
+    end
+  end
 end

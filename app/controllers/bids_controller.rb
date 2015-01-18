@@ -1,5 +1,6 @@
 class BidsController < ApplicationController
   def create
-    binding.pry
+    Bid.create(user: current_user, auction_id: params[:auction_id], offer_price: params[:offer_price])
+    redirect_to auction_path(params[:auction_id])
   end
 end
