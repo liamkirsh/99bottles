@@ -5,6 +5,7 @@ class CreateAuctions < ActiveRecord::Migration
       t.integer :minimum_price
       t.integer :product_id
       t.integer :quantity
+      t.boolean :live, default: true
 
       t.timestamps
     end
