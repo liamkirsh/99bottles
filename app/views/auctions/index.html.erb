@@ -1,0 +1,34 @@
+<div class="row 99bottles-nav">
+	<div class="small-12 columns">
+		<ul>
+			<li><a href="#">Auction</a></li>
+			<li><a href="#">Account</a></li> <!-- hide this when not applicable -->
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Logout</a></li> <!-- hide this when not applicable -->
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="small-12 columns">
+		<ul class="auction-tiles small-block-grid-1 medium-block-grip-3 large-block-grid-4">
+		<% @auctions.each do |auction| %>
+			<li>
+				<div class="row panel nty-n-bottles-tile">
+
+					<div class="small-12 columns">
+						<h3> <%= auction.product.name %> </h3>
+					</div>
+					<div class="small-12 columns"> 
+						<img src="<%=auction.product.image_link%>" alt=""> <!-- add dat image hurrrrrrrrrrr -->
+					</div>
+					<div class="small-12 columns">
+						<h3> <%= auction.minimum_price %> </h3>
+					</div>
+
+				</div>
+			</li>
+		<% end %>
+		</ul>
+	</div>
+</div>

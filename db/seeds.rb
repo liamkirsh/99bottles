@@ -16,3 +16,6 @@ bid = Bid.create(user: user, auction: auction, offer_price: 15)
   User.create(email: Faker::Internet.email, password: password, password_confirmation: password, first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
 end
 
+4.times do
+  Auction.create(minimum_price: 10.00, product_id: product.id, quantity: 5, end_time: DateTime.now.tomorrow)
+end

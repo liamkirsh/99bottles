@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   resources :auctions
 
   get 'signup' => 'users#new'
+  
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
+
   root 'sessions#new'
   # root 'static_pages#home'
 
