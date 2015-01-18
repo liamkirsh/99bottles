@@ -89,3 +89,7 @@ image_link: "http://i.imgur.com/hEP1Pxl.jpg"
 Product.all.each do |product|
   Auction.create(minimum_price: 10.00, product_id: product.id, quantity: 5, end_time: DateTime.now.tomorrow)
 end
+
+10.times do
+Bid.create(user: User.first, auction: Auction.first, offer_price: rand(10..50))
+end

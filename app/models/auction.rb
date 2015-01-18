@@ -10,4 +10,8 @@ class Auction < ActiveRecord::Base
   def create_end_time
     self.end_time = DateTime.now.tomorrow
   end
+
+  def higest_bid
+    self.bids.pluck(:offer_price).max || self.minimum_price - 1
+  end
 end
