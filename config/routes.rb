@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :auctions
   resources :orders
   resources :bids
+  resources :charges
   
   get 'signup' => 'users#new'
   
