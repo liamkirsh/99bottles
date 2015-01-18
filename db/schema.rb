@@ -12,7 +12,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20150117222140) do
-
+  
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150117222140) do
     t.integer  "minimum_price"
     t.integer  "product_id"
     t.integer  "quantity"
+    t.boolean  "live",          default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -59,5 +60,4 @@ ActiveRecord::Schema.define(version: 20150117222140) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
 end
