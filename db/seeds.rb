@@ -91,5 +91,7 @@ Product.all.each do |product|
 end
 
 10.times do
-Bid.create(user: User.first, auction: Auction.first, offer_price: rand(10..50))
+  Bid.create(user: User.first, auction: Auction.find_by(id: rand(1..4)), offer_price: rand(10..35))
 end
+
+Order.create(product: Product.first, winning_price: 25, auction: Auction.first, user: User.first)
