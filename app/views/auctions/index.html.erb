@@ -9,26 +9,40 @@
 		font-size: 1.2rem;
 	}
 </style>
+
+
 <div class="row">
 	<div class="small-12 columns">
 		<ul class="auction-tiles small-block-grid-1 medium-block-grip-3 large-block-grid-4">
+			<!-- loop starts here (the list items are the things that are going to be looped) -->
 		<% @auctions.each do |auction| %>
+			<% product = auction.product %>
 			<li>
-				<div class="row panel nty-n-bottles-tile">
+				<div id="card">
 
-					<div class="small-12 columns">
-						<h3> <%= auction.product.name %> </h3>
-					</div>
-					<div class="small-12 columns"> 
-						<img src="<%=auction.product.image_link%>" alt=""> <!-- add dat image hurrrrrrrrrrr -->
-					</div>
-					<div class="small-12 columns">
-						<h3> <%= auction.minimum_price %> </h3>
+					<div class="row panel nty-n-bottles-tile front">
+						<div class="small-12 columns">
+							<h3> <%= product.name %> </h3>
+						</div>
+						<div class="small-12 columns"> 
+							<img src="<%=auction.product.image_link%>" alt=""> <!-- add dat image hurrr -->
+						</div>
+						<div class="small-12 columns">
+							<h3> <%= auction.minimum_price %> </h3>
+						</div>
 					</div>
 
+					<div id="myModal" class="row panel nty-n-bottles-tile back reveal-modal" data-reveal>
+					  <div class="small-12 columns"> 
+							<h3>Description:</h3> 
+							<p> <%= product.description%> </p>
+						</div>
+					  <a class="close-reveal-modal">&#215;</a>
+					</div>
 				</div>
 			</li>
 		<% end %>
+			<!-- loop ends here -->
 		</ul>
 	</div>
 </div>
