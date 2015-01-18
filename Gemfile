@@ -44,3 +44,6 @@ gem 'foundation-rails'
 # gem 'debugger', group: [:development, :test]
 
 gem 'tzinfo'
+gem 'tzinfo-data'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'figaro', '~> 0.7.0'
