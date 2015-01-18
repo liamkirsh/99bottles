@@ -1,6 +1,7 @@
 class Auction < ActiveRecord::Base
   has_many :bids
   has_many :users, through: :bids
+  has_many :order
   belongs_to :product
 
   after_create :create_end_time
