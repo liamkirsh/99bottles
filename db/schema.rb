@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150117222140) do
-  
+ActiveRecord::Schema.define(version: 20150118070206) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "auctions", force: true do |t|
+  create_table "auctions", force: :cascade do |t|
     t.datetime "end_time"
     t.integer  "minimum_price"
     t.integer  "product_id"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20150117222140) do
     t.datetime "updated_at"
   end
 
-  create_table "bids", force: true do |t|
+  create_table "bids", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "auction_id"
     t.integer  "offer_price"
@@ -34,7 +34,24 @@ ActiveRecord::Schema.define(version: 20150117222140) do
     t.datetime "updated_at"
   end
 
-  create_table "products", force: true do |t|
+  create_table "carts", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "auction_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer  "product_id"
+    t.integer  "winning_price"
+    t.integer  "auction_id"
+    t.integer  "user_id"
+    t.boolean  "paid"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "products", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
     t.string   "image_link"
@@ -42,7 +59,7 @@ ActiveRecord::Schema.define(version: 20150117222140) do
     t.datetime "updated_at"
   end
 
-  create_table "shipping_informations", force: true do |t|
+  create_table "shipping_informations", force: :cascade do |t|
     t.string   "country"
     t.string   "state"
     t.string   "street"
@@ -52,7 +69,7 @@ ActiveRecord::Schema.define(version: 20150117222140) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
@@ -60,4 +77,5 @@ ActiveRecord::Schema.define(version: 20150117222140) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
 end
