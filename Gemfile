@@ -33,6 +33,8 @@ gem "faker", "~> 1.4.3"
 gem 'foundation-rails', '5.4.3.1'
 
 gem 'pry'
+
+gem 'delayed_job_active_record'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
