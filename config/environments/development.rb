@@ -37,14 +37,20 @@ Rails.application.configure do
       :address    => "smtp.mandrillapp.com",
       :port       => 587,
       :enable_starttls_auto => true,
+      :authentication => 'login',
       :user_name  => ENV["MANDRILL_USERNAME"],
+      :domain => 'localhost',
       :password   => ENV["MANDRILL_APIKEY"]
    }
 
    # ActionMailer Config
-   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+   config.action_mailer.default_url_options = { :host => 'localhost' }
    config.action_mailer.delivery_method = :smtp
    config.action_mailer.perform_deliveries = true
-   config.action_mailer.raise_delivery_errors = true 
+   config.action_mailer.raise_delivery_errors = true
+
+   MandrillMailer.configure do |config|
+      config.api_key = ENV['MANDRILL_APIKEY']
+   end
 
 end
