@@ -3,17 +3,24 @@
 			<h3> You don't have anything in your cart! </h3>
 	<% else %>
 		<% @orders.each do |order| %>
-			<div class="row panel nty-n-bottles-tile back">
-				<img src="<%= order.product.image_link%>" alt="">
-				<h4>Title: <%= order.product.name %></h4>
-				<h4>Price: <%= order.winning_price %></h4>
+			<div class="row nty-n-bottles-tile">
+				<div class="panel nty-n-cart-item">
+					<div class="small-2 columns cart-img-bottle">
+						<img src="<%= order.product.image_link%>" alt="">
+					</div>
+					<div class="small-6 columns">
+						<h4>Title: <%= order.product.name %></h4>
+						<h4>Price: <%= order.winning_price %></h4>
+					</div>
+					<div class="small-4 columns">
+						<h5>Subtotal: $<%= @orders.pluck(:winning_price).inject{|sum,x| sum + x } %>.00</h5>
+						<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+				          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+				          data-description="Checkout"
+				          data-amount="<%= @orders.pluck(:winning_price).inject{|sum,x| sum + x }%>00"></script>
+					</div>
+				</div>
 			</div>
 		<% end %>
 	<% end %>
-	<div class="row panel nty-n-bottles-tile back">
-		<h5>Subtotal: $<%= @orders.pluck(:winning_price).inject{|sum,x| sum + x } %>.00</h5>
-		<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Checkout"
-          data-amount="<%= @orders.pluck(:winning_price).inject{|sum,x| sum + x }%>00"></script>
-	</div>
+

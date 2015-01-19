@@ -44,7 +44,8 @@ section.top-bar-section > ul.right > li > a{
 }
 section.top-bar-section > ul.right > li:hover,
 section.top-bar-section > ul.right > li > a:hover{
-	color: #FC710D;
+	/*color: #FC710D;*/
+	color: #000;
 }
 ul.left > li.name a:hover{
 	color: #FC710D;
@@ -57,10 +58,7 @@ ul.left > li.name a:hover{
 	width: 160px;
 }
 
-.nty-n-bottles-tile .panel{
-	/*display: block;*/
-	/*margin: 25px;*/
-}
+
 .beer-tiles {
 	margin-top: 25px;
 	text-align: center;
@@ -88,7 +86,20 @@ ul.left > li.name a:hover{
 	font-weight: 300;
 	border: none;
 }
+
+#button-place {
+	width: 180px;
+	height: 50px;
+	background: #1FB836;
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 300;
+	border: none;
+}
 .beer-tiles > form > input[name='submit']:hover{
+	background: #000;
+}
+#button-place:hover{
 	background: #000;
 }
 .auction-confirm-msg{
@@ -103,11 +114,23 @@ ul.left > li.name a:hover{
 	font-size: 2rem;
 }
 
+/*cart*/
+.cart-img-bottle img{
+	height: 100px;
+}
 
-
-
-
-
+.nty-n-cart-item{
+	height: 150px;
+	margin-top: 25px;
+}
+.nty-n-cart-item:hover{
+	border: none;
+}
+.single-beer-shits{
+	height: 510px;
+	margin-top: 25px;
+}
+.single-beer-shits:hover{ border: none;}
 
 
 
