@@ -3,10 +3,12 @@
 	.nty-n-bottles-tile img{
 		height: 200px;
 		display: block;
-		marign: 0 auto;
+		margin: 0 auto;
 	}
 	.nty-n-bottles-tile h3{
 		font-size: 1.2rem;
+		margin: 0 auto;
+		width: 180px;
 	}
 	#beer-card {
 		width: 300 !important;
@@ -15,15 +17,15 @@
 
 <div class="row beer-tiles">
 	<div class="small-12 columns">
-		<ul class="auction-tiles small-block-grid-1 medium-block-grip-3 large-block-grid-4">
+		<ul class="auction-tiles small-block-grid-1 medium-block-grip-4 large-block-grid-4">
 			<!-- loop starts here (the list items are the things that are going to be looped) -->
 		<% @auctions.each do |auction| %>	
-			<li id="beer-card">
+			<li class="beer-card">
 			<a href="/auctions/<%= auction.id%>">		
 				<div id="card">
 					<div class="row panel nty-n-bottles-tile">
 						<div class="small-12 columns">
-							<h3> <%= auction.product.name %> </h3>
+							<h3><%= auction.product.name %></h3>
 						</div>
 						<div class="small-12 columns"> 
 							<img src="<%=auction.product.image_link%>" alt=""> <!-- add dat image hurrr -->
