@@ -39,7 +39,7 @@ image_link: "http://i.imgur.com/BBrI0IC.png"
 )
 
 Product.create(
-name: "Founders Breakfast Stout",
+name: "Founders Breakfast",
 description: "Brewed with flaked oats, bitter and 
 sweetened imported chocolates, Sumatra and Kona coffee. ",
 image_link: "http://i.imgur.com/NPVLbvI.jpg"
@@ -70,7 +70,7 @@ image_link: "http://i.imgur.com/r6SfISm.jpg"
 )
 
 Product.create(
-name: "Cane & Ebel - Two Brothers Brewing Company",
+name: "Cane & Ebel - Two Brothers Brewery",
 description: "Dry, but with a creamy touch of Thai Palm Sugar and the spicy tang 
 of Rye, all balanced by loads of the wackiest new Hops we could lay our hands
 on. Yep, it’s an Orignal. And that’s no Sin. ",
@@ -90,8 +90,8 @@ Product.all.each do |product|
   Auction.create(minimum_price: 10.00, product_id: product.id, quantity: 5, end_time: DateTime.now.tomorrow)
 end
 
-10.times do
-  Bid.create(user: User.first, auction: Auction.find_by(id: rand(1..4)), offer_price: rand(10..35))
-end
+# 10.times do
+#   Bid.create(user: User.first, auction: Auction.find_by(id: rand(1..4)), offer_price: rand(10..35))
+# end
 
 Order.create(product: Product.first, winning_price: 25, auction: Auction.first, user: User.first)
