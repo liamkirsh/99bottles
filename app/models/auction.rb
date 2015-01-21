@@ -1,12 +1,13 @@
 class Auction < ActiveRecord::Base
   has_many :bids
   has_many :users, through: :bids
-  has_many :order
+  has_many :orders
   belongs_to :product
 
   after_create :create_end_time
 
   scope :live, -> () { where('? < end_time', DateTime.current) }
+  scope :dead, -> () { where('? > end_time', DateTime.current) }
 
   def create_end_time
     self.end_time = DateTime.now.tomorrow
@@ -29,4 +30,8 @@ class Auction < ActiveRecord::Base
     DateTime.current < end_time
   end
 
+  def is_dead?
+    DateTime.current > end_time
+  end
+  
 end
