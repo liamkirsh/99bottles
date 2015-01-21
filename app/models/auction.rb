@@ -6,7 +6,7 @@ class Auction < ActiveRecord::Base
 
   after_create :create_end_time
 
-  #callback that sets auction live status to false after end time
+  scope :live, -> () { where('? < end_time', DateTime.current) }
 
   def create_end_time
     self.end_time = DateTime.now.tomorrow
@@ -25,8 +25,8 @@ class Auction < ActiveRecord::Base
     end
   end
 
-  # def some_method
-  #   puts 'hello'
-  # end
-  # handle_asynchronously :some_method
+  def is_live?
+    DateTime.current < end_time
+  end
+
 end

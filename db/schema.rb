@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 20150118121640) do
     t.integer  "minimum_price"
     t.integer  "product_id"
     t.integer  "quantity"
-    t.boolean  "live",          default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
