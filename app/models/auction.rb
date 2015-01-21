@@ -44,10 +44,6 @@ class Auction < ActiveRecord::Base
         Order.create(auction: auction, user: auction.highest_bidder) 
       end
     end
-  end
-
-  def self.hello
-    User.create(first_name: "test", last_name: "test", email: "lol@aol.com", password: "password")
-    puts "=" * 100
+    puts "Orders Created at #{Time.now}!"
   end
 end
