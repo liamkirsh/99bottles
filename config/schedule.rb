@@ -18,3 +18,9 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+# env :PATH, ENV['PATH']
+
+every 1.minute do
+  # runner "Auction.hello", :output => 'log/cron.log
+  rake "send_emails:create_orders", :environment => 'development', :output => 'log/cron.log'
+end

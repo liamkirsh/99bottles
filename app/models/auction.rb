@@ -45,4 +45,9 @@ class Auction < ActiveRecord::Base
       end
     end
   end
+
+  def self.hello
+    # User.create(first_name: "test", last_name: "test", email: "lol@aol.com", password: "password")
+    puts "=" * 100
+  end
 end
