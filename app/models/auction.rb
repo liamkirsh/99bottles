@@ -26,6 +26,10 @@ class Auction < ActiveRecord::Base
     end
   end
 
+  def has_bids?
+   false == self.bids.empty?
+  end
+
   def is_live?
     DateTime.current < end_time
   end
@@ -34,4 +38,11 @@ class Auction < ActiveRecord::Base
     DateTime.current > end_time
   end
 
+  def self.create_orders
+    self.dead.map do |auction| 
+      if auction.orders.empty? && auction.has_bids?
+        Order.create(auction: auction, user: auction.highest_bidder) 
+      end
+    end
+  end
 end
