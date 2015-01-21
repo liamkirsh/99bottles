@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150118121640) do
     t.integer  "minimum_price"
     t.integer  "product_id"
     t.integer  "quantity"
+    t.boolean  "order_created", default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,13 +32,6 @@ ActiveRecord::Schema.define(version: 20150118121640) do
     t.integer  "offer_price"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "carts", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "auction_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "delayed_jobs", force: :cascade do |t|
