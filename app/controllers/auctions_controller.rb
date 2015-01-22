@@ -1,6 +1,6 @@
 class AuctionsController < ApplicationController
   def index
-    @auctions = Auction.where(live: true)
+    @auctions = Auction.live.limit(8)
   end
 
   def show

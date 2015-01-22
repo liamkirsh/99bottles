@@ -34,7 +34,7 @@ gem 'foundation-rails', '5.4.3.1'
 
 gem 'pry'
 
-gem 'delayed_job_active_record'
+gem 'whenever', :require => false
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use ActiveModel has_secure_password
