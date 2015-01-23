@@ -10,7 +10,7 @@ class Auction < ActiveRecord::Base
   scope :dead, -> () { where('? > end_time', DateTime.current) }
 
   def create_end_time
-    self.end_time = DateTime.now.tomorrow.beginning_of_hour
+    self.end_time = DateTime.current.tomorrow.beginning_of_hour
   end
 
   def higest_bid
