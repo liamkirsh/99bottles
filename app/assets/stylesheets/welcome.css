@@ -1,0 +1,10 @@
+.background-image {
+  height: 700px;
+  width: 100%; 
+}
+.bg-image-darkbeer {
+  position: relative;
+  top: -3px; /* fix small line at top of image*/
+  background-image: url(http://i.imgur.com/YxACZUU.jpg?1);
+  background-size: cover;
+}
