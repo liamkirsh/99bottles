@@ -37,6 +37,8 @@ gem 'pry'
 gem 'whenever', :require => false
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
+gem 'dotenv-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

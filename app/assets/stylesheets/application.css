@@ -15,7 +15,7 @@
  *= require foundation_and_overrides
 
  */
-body {
+/*body {
 	background-color: #FFEB4D;
 }
 
@@ -44,7 +44,6 @@ section.top-bar-section > ul.right > li > a{
 }
 section.top-bar-section > ul.right > li:hover,
 section.top-bar-section > ul.right > li > a:hover{
-	/*color: #FC710D;*/
 	color: #000;
 }
 ul.left > li.name a:hover{
@@ -55,7 +54,7 @@ ul.left > li.name a:hover{
 }
 
 .beer-card {
-	width: 160px;
+	margin-right: 0px;
 }
 
 
@@ -115,7 +114,7 @@ ul.left > li.name a:hover{
 }
 
 /*cart*/
-.cart-img-bottle img{
+/*.cart-img-bottle img{
 	height: 100px;
 }
 
@@ -132,22 +131,11 @@ ul.left > li.name a:hover{
 }
 .single-beer-shits:hover{ border: none;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.change-box-type {
+	padding-right: 10px;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+}*/
 
 
 
