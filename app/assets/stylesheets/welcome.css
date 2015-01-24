@@ -8,3 +8,13 @@
   background-image: url(http://i.imgur.com/YxACZUU.jpg?1);
   background-size: cover;
 }
+.welcome-text {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.welcome-text h1{
+	font-family:; 
+	color: white;
+}
