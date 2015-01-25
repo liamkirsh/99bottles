@@ -21,6 +21,7 @@ $(function(){ $(document).foundation();
 	revealLogin()
 	revealRegister()
 	founderCardFade()
+	stepsCardFade()
 })
 
 function revealLogin(){
@@ -44,6 +45,16 @@ function founderCardFade(){
 	        $(".founder-card").fadeIn(700)
 	    } else {
 	        $(".founder-card").fadeOut(700)
+	    }
+	})
+}
+function stepsCardFade(){
+	$(".hiw-card").hide()
+	$(window).bind("scroll", function() {
+	    if ($(this).scrollTop() > 300) {
+	        $(".hiw-card").fadeIn(700)
+	    } else {
+	        $(".hiw-card").fadeOut(700)
 	    }
 	})
 }
