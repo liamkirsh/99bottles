@@ -18,11 +18,19 @@
 
 $(function(){ $(document).foundation(); 
 	revealLogin();
+	revealRegister();
 });
 
 function revealLogin(){
 	$(".login-btn a").click(function(event) {
 		event.preventDefault()
 		$('#loginModal').foundation('reveal', 'open')
+	});
+}
+
+function revealRegister(){
+	$(".register-btn a").click(function(event) {
+		event.preventDefault()
+		$('#registerModal').foundation('reveal', 'open')
 	});
 }
