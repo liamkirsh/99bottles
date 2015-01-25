@@ -41,7 +41,7 @@ function revealRegister(){
 function founderCardFade(){
 	$(".founder-card").hide()
 	$(window).bind("scroll", function() {
-	    if ($(this).scrollTop() > 750) {
+	    if ($(this).scrollTop() > 650) {
 	        $(".founder-card").fadeIn(700)
 	    } else {
 	        $(".founder-card").fadeOut(700)
