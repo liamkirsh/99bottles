@@ -16,4 +16,13 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ $(document).foundation(); 
+	revealLogin();
+});
+
+function revealLogin(){
+	$(".login-btn a").click(function(event) {
+		event.preventDefault()
+		console.log("button clicked")
+	});
+}
