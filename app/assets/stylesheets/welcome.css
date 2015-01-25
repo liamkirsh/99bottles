@@ -1,3 +1,10 @@
+/** { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+*/
 .background-image {
   height: 600px;
   width: 100%; 
@@ -36,4 +43,28 @@
     -ms-filter: blur(4px);
     -o-filter: blur(4px);
     filter: blur(4px);*/
+}
+.meet-founders {
+  position: relative;
+  top: -6px;
+  height: 500px;
+  background: #F6F9FA;
+}
+.center {
+  display: table;
+  margin: 0 auto;
+}
+.founder-card {
+  background-color: white;
+  border: solid
+  width: 150px;
+  height: 370px;
+}
+.card-content {
+  position: relative;
+  top: 10px;
+  width: 150px;
+}
+.card-image {
+  border-radius: 50%;
 }
