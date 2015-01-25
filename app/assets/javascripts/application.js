@@ -18,20 +18,43 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); 
-	revealLogin();
-	revealRegister();
-});
+	revealLogin()
+	revealRegister()
+	founderCardFade()
+	stepsCardFade()
+})
 
 function revealLogin(){
 	$(".login-btn a").click(function(event) {
 		event.preventDefault()
 		$('#loginModal').foundation('reveal', 'open')
-	});
+	})
 }
 
 function revealRegister(){
 	$(".register-btn a").click(function(event) {
 		event.preventDefault()
 		$('#registerModal').foundation('reveal', 'open')
-	});
+	})
+}
+
+function founderCardFade(){
+	$(".founder-card").hide()
+	$(window).bind("scroll", function() {
+	    if ($(this).scrollTop() > 650) {
+	        $(".founder-card").fadeIn(700)
+	    } else {
+	        $(".founder-card").fadeOut(700)
+	    }
+	})
+}
+function stepsCardFade(){
+	$(".hiw-card").hide()
+	$(window).bind("scroll", function() {
+	    if ($(this).scrollTop() > 300) {
+	        $(".hiw-card").fadeIn(700)
+	    } else {
+	        $(".hiw-card").fadeOut(700)
+	    }
+	})
 }

@@ -1,5 +1,12 @@
+/** { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+*/
 .background-image {
-  height: 600px;
+  height: 100%;
   width: 100%; 
 }
 .bg-image-darkbeer {
@@ -36,4 +43,76 @@
     -ms-filter: blur(4px);
     -o-filter: blur(4px);
     filter: blur(4px);*/
+}
+
+/*  This is for meet the founders section */
+.off-white {
+  background: #F6F9FA;
+}
+
+.section-title {
+  margin-top: 20px;
+}
+.meet-founders {
+  position: relative;
+  top: -6px;
+  height: 500px;
+  border-style: solid;
+  border-width: 1px;
+}
+.center {
+  display: table;
+  margin: 0 auto;
+}
+.founder-card {
+  background-color: white;
+  height: 370px;
+}
+.card-content {
+  position: relative;
+  top: 10px;
+  width: 150px;
+}
+.card-content{
+  margin-top: 10px;
+}
+.card-content h5{
+  margin-top: 10px;
+}
+.card-image {
+  border-radius: 50%;
+}
+.font-grey {
+ color:#493024;
+}
+.font-1 {
+  font-size: .9em;
+}
+.founder-card p {
+  text-align: center;
+  margin-top: 15px;
+  width: 250px;
+}
+
+
+/* How it Works Section */
+.how-it-works {
+  position: relative;
+  top: -6px;
+  height: 500px;
+  width: 100%;
+}
+.hiw-content {
+  position: relative;
+  top: 10px;
+  width: 250px;
+}
+.hiw-content p {
+  margin-top: 25%;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+.step-image {
+  height: 150px;
+  /*margin-top: 50%;*/
 }
