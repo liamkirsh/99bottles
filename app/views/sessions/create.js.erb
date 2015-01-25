@@ -1,1 +1,5 @@
-$("#loginModal").effect("shake")
+<% if @successful %>
+	window.location.replace("<%= "#{request.protocol}#{request.host_with_port}#{auctions_path}" %>");
+<% else %>
+	$("#loginModal").effect("shake")
+<% end %>
