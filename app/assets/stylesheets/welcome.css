@@ -49,10 +49,16 @@
 .off-white {
   background: #F6F9FA;
 }
+
+.section-title {
+  margin-top: 20px;
+}
 .meet-founders {
   position: relative;
   top: -6px;
   height: 500px;
+  border-style: solid;
+  border-width: 1px;
 }
 .center {
   display: table;
@@ -88,13 +94,13 @@
   width: 250px;
 }
 
+
 /* How it Works Section */
 .how-it-works {
   position: relative;
-  height: 700px;
+  top: -6px;
+  height: 500px;
   width: 100%;
-  border-bottom: solid;
-  border-color: #493024;
 }
 .hiw-content {
   position: relative;
@@ -102,9 +108,11 @@
   width: 250px;
 }
 .hiw-content p {
+  margin-top: 25%;
+  margin-bottom: 10px;
   font-size: 1em;
 }
 .step-image {
-  height: 100px;
-  margin-top: 10px
+  height: 150px;
+  /*margin-top: 50%;*/
 }
