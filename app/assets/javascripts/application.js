@@ -23,6 +23,6 @@ $(function(){ $(document).foundation();
 function revealLogin(){
 	$(".login-btn a").click(function(event) {
 		event.preventDefault()
-		console.log("button clicked")
+		$('#loginModal').foundation('reveal', 'open')
 	});
 }
