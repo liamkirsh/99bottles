@@ -21,6 +21,7 @@ $(function(){ $(document).foundation();
 	revealLogin()
 	revealRegister()
 	founderCardFade()
+	stepsCardFade()
 })
 
 function revealLogin(){
@@ -40,10 +41,20 @@ function revealRegister(){
 function founderCardFade(){
 	$(".founder-card").hide()
 	$(window).bind("scroll", function() {
-	    if ($(this).scrollTop() > 250) {
+	    if ($(this).scrollTop() > 650) {
 	        $(".founder-card").fadeIn(700)
 	    } else {
 	        $(".founder-card").fadeOut(700)
+	    }
+	})
+}
+function stepsCardFade(){
+	$(".hiw-card").hide()
+	$(window).bind("scroll", function() {
+	    if ($(this).scrollTop() > 300) {
+	        $(".hiw-card").fadeIn(700)
+	    } else {
+	        $(".hiw-card").fadeOut(700)
 	    }
 	})
 }
