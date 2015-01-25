@@ -1,5 +1,5 @@
 .background-image {
-  height: 700px;
+  height: 600px;
   width: 100%; 
 }
 .bg-image-darkbeer {
@@ -25,11 +25,11 @@
     width:100%;
     height:100%;
     position: absolute;
-    background-image:url(http://i.imgur.com/YxACZUU.jpg?1);
     background-size:cover;
-    -webkit-filter: blur(4px);
+   /* -webkit-filter: blur(4px);
     -moz-filter: blur(4px);
     -ms-filter: blur(4px);
     -o-filter: blur(4px);
-    filter: blur(4px);
+    filter: blur(4px);*/
+	background: rgba(0, 0, 0, 0.4);
 }
