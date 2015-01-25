@@ -10,8 +10,6 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       log_in user
       redirect_to "/auctions"
-    else
-      redirect_to root_url
     end
   end
 
