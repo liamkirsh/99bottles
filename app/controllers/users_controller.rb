@@ -3,11 +3,10 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @successful = false
     if @user.save
       log_in(@user)
-      redirect_to '/auctions'
-    else
-      redirect_to root_url
+      @successful = true
     end
   end
 

@@ -1,0 +1,5 @@
+<%if @successful%>
+	window.location.replace("<%= "#{request.protocol}#{request.host_with_port}#{auctions_path}" %>");
+<%else%>
+	$("#registerModal").effect("shake");
+<%end%>
