@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
-  get "/signout" => "sessions#destroy"
+  get "signout" => "sessions#destroy"
 
-  root 'sessions#new'
+  root 'users#welcome'
   # root 'static_pages#home'
 
   # get 'static_pages/faq'

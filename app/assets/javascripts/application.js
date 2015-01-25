@@ -12,8 +12,26 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require foundation
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ $(document).foundation(); 
+	revealLogin();
+	revealRegister();
+});
+
+function revealLogin(){
+	$(".login-btn a").click(function(event) {
+		event.preventDefault()
+		$('#loginModal').foundation('reveal', 'open')
+	});
+}
+
+function revealRegister(){
+	$(".register-btn a").click(function(event) {
+		event.preventDefault()
+		$('#registerModal').foundation('reveal', 'open')
+	});
+}
