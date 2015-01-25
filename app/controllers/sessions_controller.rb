@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to "/auctions"
     else
-      redirect_to login_path
+      redirect_to root_url
     end
   end
 
