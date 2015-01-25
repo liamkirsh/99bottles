@@ -44,11 +44,15 @@
     -o-filter: blur(4px);
     filter: blur(4px);*/
 }
+
+/*  This is for meet the founders section */
+.off-white {
+  background: #F6F9FA;
+}
 .meet-founders {
   position: relative;
   top: -6px;
   height: 500px;
-  background: #F6F9FA;
 }
 .center {
   display: table;
@@ -80,6 +84,27 @@
 }
 .founder-card p {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 250px;
+}
+
+/* How it Works Section */
+.how-it-works {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  border-bottom: solid;
+  border-color: #493024;
+}
+.hiw-content {
+  position: relative;
+  top: 10px;
+  width: 250px;
+}
+.hiw-content p {
+  font-size: 1em;
+}
+.step-image {
+  height: 100px;
+  margin-top: 10px
 }
