@@ -31,8 +31,6 @@ gem 'bcrypt-ruby', '~> 3.1.5'
 
 gem "faker", "~> 1.4.3"
 
-gem 'foundation-rails', '5.4.3.1'
-
 gem 'pry'
 
 gem 'whenever', :require => false
