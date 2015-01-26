@@ -12,12 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
 //= require foundation
+//= require jquery-ui
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); 
+$(function(){ $(document).foundation();
+	console.log("This is just a test") 
 	revealLogin()
 	revealRegister()
 	founderCardFade()
@@ -58,3 +59,4 @@ function stepsCardFade(){
 	    }
 	})
 }
+$(function(){ $(document).foundation(); });

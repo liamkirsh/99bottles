@@ -23,5 +23,8 @@
 #whenever -i to update crontab
 
 every :hour do
+  rake "send_emails:create_orders", :environment => 'production', :output => 'log/cron.log'
+end
+every :hour do
   rake "send_emails:create_orders", :environment => 'development', :output => 'log/cron.log'
 end
