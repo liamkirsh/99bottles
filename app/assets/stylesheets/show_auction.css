@@ -9,7 +9,7 @@ div.panel {
 .nty-n-bottles-tile img{
 	height: 200px;
 	display: block;
-	margin: 0 auto;
+	margin: 30px auto;
 }
 .nty-n-bottles-tile h3{
 	font-size: 1.2rem;
@@ -23,9 +23,12 @@ div.panel {
 	top: -30px;
 	max-height: 400px;
 }
+
+.nty-n-bottles-tile:hover {
+	background-color: #F2F2F2;
+	-webkit-transform: translate(0,-7px);
+}
+
 #beer-card {
 	width: 300px;
 }
-/*.hide {
-	display: none;
-}*/
