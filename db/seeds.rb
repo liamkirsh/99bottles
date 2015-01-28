@@ -25,7 +25,7 @@ name: "Cantillon Iris",
 description: "Although it is a spontaneous fermentation beer, 
 the Iris is very different from the Lambic. The amber colour and 
 the bitter and slightly caramelized taste make it a complex beer.",
-image_link: "http://i.imgur.com/hSxYdLV.jpg"
+image_link: "http://i.imgur.com/qhzOchq.png"
 )
 
 Product.create(
@@ -33,40 +33,38 @@ name: "Dark Penance",
 description: "A heavy malt foundation includes Crystal malt for 
 sweetness and just enough Midnight Wheat malt to push the color to 
 black. The bitterness is huge, but balanced by malt sweetness and 
-alcohol burn. The hop flavors and aromas range from citrus to floral 
-to pine thanks to a delicious blend of hand-selected Chinook and Centennial hops.",
-image_link: "http://i.imgur.com/BBrI0IC.png"
+alcohol burn.",
+image_link: "http://i.imgur.com/Zr1ZGKd.png"
 )
 
 Product.create(
 name: "Founders Breakfast",
 description: "Brewed with flaked oats, bitter and 
 sweetened imported chocolates, Sumatra and Kona coffee. ",
-image_link: "http://i.imgur.com/NPVLbvI.jpg"
+image_link: "http://i.imgur.com/MGhDDX5.png"
 )
 
 Product.create(
 name: "Orval Trappist Ale",
-description: "Many agree that the somewhat unpractical addition of 
+description: "The somewhat unpractical addition of 
 this sometimes undesired yeast strain is what grants Orval its age worthiness, 
 not to mention unique aroma, making it a one of the few beers worth cellaring.",
-image_link: "http://i.imgur.com/HaMOjm3.png"
+image_link: "http://i.imgur.com/IPkAlPS.png"
 )
 
 Product.create(
 name: "Fuller's London Porter",
 description: "Fuller's London Porter is an award-winning example of this historic 
 English style; smooth and creamy with delicious chocolate and coffee flavors derived from the roasted malt. ",
-image_link: "http://i.imgur.com/rK4DTkb.jpg"
+image_link: "http://i.imgur.com/rzXiOVU.png"
 )
 
 Product.create(
 name: "Samichlaus Classic Bier",
-description: "The once strongest beer in the world is back! Brewed only once a 
-year on December 6. Samichlaus is aged for 10 months before bottling. This beer is
- perhaps the rarest in the world. Samichlaus may be aged for many years to come. 
+description: "Brewed only once a year on December 6. Samichlaus is aged for 10 months before bottling. This beer is
+ perhaps the rarest in the world.
  Older vintages become more complex with a creamy warming finish. ",
-image_link: "http://i.imgur.com/r6SfISm.jpg"
+image_link: "http://i.imgur.com/lvKNdwA.png"
 )
 
 Product.create(
@@ -74,16 +72,16 @@ name: "Cane & Ebel - Two Brothers Brewery",
 description: "Dry, but with a creamy touch of Thai Palm Sugar and the spicy tang 
 of Rye, all balanced by loads of the wackiest new Hops we could lay our hands
 on. Yep, it’s an Orignal. And that’s no Sin. ",
-image_link: "http://i.imgur.com/1gZimTZ.jpg"
+image_link: "http://i.imgur.com/GiZcpw5.png "
 )
 
 Product.create(
 name: "Smoked Porter - O'Fallon Brewery",
 description: "Dark, rich and smoky…this classic porter is brewed with 63% 
-German smoked malt and makes a perfect after dinner (or anytime) sipper for 
+German smoked malt and makes a perfect after dinner sipper for 
 those who love a “bigger” beer. Winner of the Gold Medal in the 2004 Great
- American Beer Festival® for best Smoked Beer in America! ",
-image_link: "http://i.imgur.com/hEP1Pxl.jpg"
+ American Beer Festival®.",
+image_link: "http://i.imgur.com/z488iLy.png"
 )
 
 Product.all.each do |product|

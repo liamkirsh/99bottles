@@ -45,7 +45,7 @@
 
 /*  This is for meet the founders section */
 .off-white {
-  background: #F6F9FA;
+  background-color: #F6F9FA;
 }
 
 .section-title {
@@ -65,11 +65,9 @@
 .founder-card {
   background-color: white;
   height: 370px;
+  width: 300px;
 }
 
-#faraaz{
-  width: 300px !important;
-}
 .card-content {
   position: relative;
   top: 10px;

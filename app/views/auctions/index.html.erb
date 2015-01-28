@@ -1,38 +1,43 @@
 <%= render partial: "layouts/navigation" %>
-<style>
-	.nty-n-bottles-tile img{
-		height: 200px;
-		display: block;
-		margin: 0 auto;
-	}
-	.nty-n-bottles-tile h3{
-		font-size: 1.2rem;
-		margin: 0 auto;
-		width: 180px;
-	}
-	#beer-card {
-		width: 300 !important;
-	}
-</style>
-
 <div class="row beer-tiles">
-	<div class="small-12 columns">
-		<ul class="auction-tiles small-block-grid-1 medium-block-grip-4 large-block-grid-4">
+	<div class="small-12 columns topmargin">
+		<ul class="auction-tiles small-block-grid-1 medium-block-grip-4 large-block-grid-4" >
 			<!-- loop starts here (the list items are the things that are going to be looped) -->
 		<% @auctions.each do |auction| %>	
 			<li class="beer-card">
-			<a href="/auctions/<%= auction.id%>">		
-				<div id="card">
-					<div class="row panel nty-n-bottles-tile">
+			<!-- <a href="/auctions/<%= auction.id%>">		 -->
+				<div class="card" id="card_<%=auction.id%>">
+					<div class="row panel nty-n-bottles-tile front">
 						<div class="small-12 columns">
-							<h3><%= auction.product.name %></h3>
+							<center>
+								<h3><%= auction.product.name %></h3>
+							</center>
 						</div>
 						<div class="small-12 columns"> 
 							<img src="<%=auction.product.image_link%>" alt=""> <!-- add dat image hurrr -->
 						</div>
 					</div>
+					<div class="panel nty-n-bottles-tile back">
+						<center>
+							<div>
+								<p><%= auction.product.description %></p>
+							</div>
+						</center>
+						<% if auction.highest_bidder == User.find_by(id: session[:user_id]) %>
+							<div class="bottom button small winning-bid">
+								<span>Highest Bidder</span>
+							</div>
+						<% else %>
+							<form id="bid_form_auction_<%= auction.id %>"class="bottom-of-panel" action="/bids" method="post" data-remote="true">
+								<input type="hidden" name="auction_id" value="<%= auction.id %>">
+								<input class="center" type="text" name="offer_price" placeholder="Minimum $<%=auction.higest_bid + 1 %>.00">
+								<input class="button small center custom-btn"id="button-place"type="submit" name="submit" value="Place Bid">
+							</form>
+	
+						<% end %>
+					</div>
 				</div>
-				</a>	
+				<!-- </a>	 -->
 			</li>
 		<% end %>
 			<!-- loop ends here -->
