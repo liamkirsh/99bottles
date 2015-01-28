@@ -24,11 +24,11 @@
 							</div>
 						</center>
 						<% if auction.highest_bidder == User.find_by(id: session[:user_id]) %>
-							<div class="auction-confirm-msg bottom button small winning-bid">
+							<div class="bottom button small winning-bid">
 								<span>Highest Bidder</span>
 							</div>
 						<% else %>
-							<form class="bottom-of-panel" action="/bids" method="post">
+							<form id="bid_form_auction_<%= auction.id %>"class="bottom-of-panel" action="/bids" method="post" data-remote="true">
 								<input type="hidden" name="auction_id" value="<%= auction.id %>">
 								<input class="center" type="text" name="offer_price" placeholder="Minimum $<%=auction.higest_bid + 1 %>.00">
 								<input class="button small center custom-btn"id="button-place"type="submit" name="submit" value="Place Bid">
