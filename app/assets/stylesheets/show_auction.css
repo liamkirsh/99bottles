@@ -1,3 +1,17 @@
 div.panel {
 	overflow: hidden;
 }
+
+.nty-n-bottles-tile img{
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+.nty-n-bottles-tile h3{
+	font-size: 1.2rem;
+	margin: 0 auto;
+	width: 180px;
+}
+#beer-card {
+	width: 300 !important;
+}
