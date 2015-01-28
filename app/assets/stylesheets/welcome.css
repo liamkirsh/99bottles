@@ -65,6 +65,7 @@
 .founder-card {
   background-color: white;
   height: 370px;
+  width: 300px;
 }
 .card-content {
   position: relative;
