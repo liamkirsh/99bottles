@@ -25,7 +25,7 @@ name: "Cantillon Iris",
 description: "Although it is a spontaneous fermentation beer, 
 the Iris is very different from the Lambic. The amber colour and 
 the bitter and slightly caramelized taste make it a complex beer.",
-image_link: "http://i.imgur.com/hSxYdLV.jpg"
+image_link: "http://i.imgur.com/qhzOchq.png"
 )
 
 Product.create(
@@ -35,14 +35,14 @@ sweetness and just enough Midnight Wheat malt to push the color to
 black. The bitterness is huge, but balanced by malt sweetness and 
 alcohol burn. The hop flavors and aromas range from citrus to floral 
 to pine thanks to a delicious blend of hand-selected Chinook and Centennial hops.",
-image_link: "http://i.imgur.com/BBrI0IC.png"
+image_link: "http://i.imgur.com/Zr1ZGKd.png"
 )
 
 Product.create(
 name: "Founders Breakfast",
 description: "Brewed with flaked oats, bitter and 
 sweetened imported chocolates, Sumatra and Kona coffee. ",
-image_link: "http://i.imgur.com/NPVLbvI.jpg"
+image_link: "http://i.imgur.com/MGhDDX5.png"
 )
 
 Product.create(
@@ -50,14 +50,14 @@ name: "Orval Trappist Ale",
 description: "Many agree that the somewhat unpractical addition of 
 this sometimes undesired yeast strain is what grants Orval its age worthiness, 
 not to mention unique aroma, making it a one of the few beers worth cellaring.",
-image_link: "http://i.imgur.com/HaMOjm3.png"
+image_link: "http://i.imgur.com/IPkAlPS.png"
 )
 
 Product.create(
 name: "Fuller's London Porter",
 description: "Fuller's London Porter is an award-winning example of this historic 
 English style; smooth and creamy with delicious chocolate and coffee flavors derived from the roasted malt. ",
-image_link: "http://i.imgur.com/rK4DTkb.jpg"
+image_link: "http://i.imgur.com/rzXiOVU.png"
 )
 
 Product.create(
@@ -74,7 +74,7 @@ name: "Cane & Ebel - Two Brothers Brewery",
 description: "Dry, but with a creamy touch of Thai Palm Sugar and the spicy tang 
 of Rye, all balanced by loads of the wackiest new Hops we could lay our hands
 on. Yep, it’s an Orignal. And that’s no Sin. ",
-image_link: "http://i.imgur.com/1gZimTZ.jpg"
+image_link: "http://i.imgur.com/GiZcpw5.png "
 )
 
 Product.create(
