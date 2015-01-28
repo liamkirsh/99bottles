@@ -64,5 +64,7 @@ function stepsCardFade(){
 }
 
 function hideBackCards(){
-	array = $(".card").flip()
+	array = $(".card").flip({
+		trigger: 'hover'
+	})
 }

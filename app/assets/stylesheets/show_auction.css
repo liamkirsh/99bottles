@@ -24,11 +24,6 @@ div.panel {
 	max-height: 400px;
 }
 
-.nty-n-bottles-tile:hover {
-	background-color: #F2F2F2;
-	-webkit-transform: translate(0,-7px);
-}
-
 #beer-card {
 	width: 300px;
 }
