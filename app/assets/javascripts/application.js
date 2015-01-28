@@ -18,7 +18,7 @@
 //= require_tree .
 
 $(function(){ $(document).foundation();
-	console.log("This is just a test") 
+	console.log("This should print")
 	revealLogin()
 	revealRegister()
 	founderCardFade()

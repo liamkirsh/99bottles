@@ -21,9 +21,7 @@
 	top: 50%;
 	transform: translateY(-100%);
 }
-.welcome-text h1{
-
-	font-family:; 
+.welcome-text h1{ 
 	color: white;
 }
 .darken {
@@ -67,6 +65,10 @@
 .founder-card {
   background-color: white;
   height: 370px;
+}
+
+#faraaz{
+  width: 300px !important;
 }
 .card-content {
   position: relative;
