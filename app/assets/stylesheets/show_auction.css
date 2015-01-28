@@ -1,3 +1,7 @@
+.topmargin {
+	margin-top: 10%;
+}
+
 div.panel {
 	overflow: hidden;
 }
@@ -12,6 +16,12 @@ div.panel {
 	margin: 0 auto;
 	width: 180px;
 }
+.nty-n-bottles-tile {
+	max-height: 400px;
+}
 #beer-card {
 	width: 300 !important;
 }
+/*.hide {
+	display: none;
+}*/

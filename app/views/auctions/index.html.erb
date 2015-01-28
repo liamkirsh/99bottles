@@ -1,7 +1,7 @@
 <%= render partial: "layouts/navigation" %>
 <div class="row beer-tiles">
-	<div class="small-12 columns">
-		<ul class="auction-tiles small-block-grid-1 medium-block-grip-4 large-block-grid-4">
+	<div class="small-12 columns topmargin">
+		<ul class="auction-tiles small-block-grid-1 medium-block-grip-4 large-block-grid-4" >
 			<!-- loop starts here (the list items are the things that are going to be looped) -->
 		<% @auctions.each do |auction| %>	
 			<li class="beer-card">
@@ -9,16 +9,20 @@
 				<div class="card" id="card_<%=auction.id%>">
 					<div class="row panel nty-n-bottles-tile front">
 						<div class="small-12 columns">
-							<center><h3><%= auction.product.name %></h3></center>
+							<center>
+								<h3><%= auction.product.name %></h3>
+							</center>
 						</div>
 						<div class="small-12 columns"> 
 							<img src="<%=auction.product.image_link%>" alt=""> <!-- add dat image hurrr -->
 						</div>
 					</div>
 					<div class="panel nty-n-bottles-tile back">
-						<center><div class="small-12 columns center-my-text">
-							<h3><%= auction.product.name %>  </h3>
-						</div></center>
+						<center>
+							<div>
+								<p><%= auction.product.description %></p>
+							</div>
+						</center>
 					</div>
 				</div>
 				<!-- </a>	 -->
