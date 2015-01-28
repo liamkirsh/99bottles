@@ -33,8 +33,7 @@ name: "Dark Penance",
 description: "A heavy malt foundation includes Crystal malt for 
 sweetness and just enough Midnight Wheat malt to push the color to 
 black. The bitterness is huge, but balanced by malt sweetness and 
-alcohol burn. The hop flavors and aromas range from citrus to floral 
-to pine thanks to a delicious blend of hand-selected Chinook and Centennial hops.",
+alcohol burn.",
 image_link: "http://i.imgur.com/Zr1ZGKd.png"
 )
 
@@ -47,7 +46,7 @@ image_link: "http://i.imgur.com/MGhDDX5.png"
 
 Product.create(
 name: "Orval Trappist Ale",
-description: "Many agree that the somewhat unpractical addition of 
+description: "The somewhat unpractical addition of 
 this sometimes undesired yeast strain is what grants Orval its age worthiness, 
 not to mention unique aroma, making it a one of the few beers worth cellaring.",
 image_link: "http://i.imgur.com/IPkAlPS.png"
@@ -62,9 +61,8 @@ image_link: "http://i.imgur.com/rzXiOVU.png"
 
 Product.create(
 name: "Samichlaus Classic Bier",
-description: "The once strongest beer in the world is back! Brewed only once a 
-year on December 6. Samichlaus is aged for 10 months before bottling. This beer is
- perhaps the rarest in the world. Samichlaus may be aged for many years to come. 
+description: "Brewed only once a year on December 6. Samichlaus is aged for 10 months before bottling. This beer is
+ perhaps the rarest in the world.
  Older vintages become more complex with a creamy warming finish. ",
 image_link: "http://i.imgur.com/lvKNdwA.png"
 )
@@ -80,9 +78,9 @@ image_link: "http://i.imgur.com/GiZcpw5.png "
 Product.create(
 name: "Smoked Porter - O'Fallon Brewery",
 description: "Dark, rich and smoky…this classic porter is brewed with 63% 
-German smoked malt and makes a perfect after dinner (or anytime) sipper for 
+German smoked malt and makes a perfect after dinner sipper for 
 those who love a “bigger” beer. Winner of the Gold Medal in the 2004 Great
- American Beer Festival® for best Smoked Beer in America! ",
+ American Beer Festival®.",
 image_link: "http://i.imgur.com/z488iLy.png"
 )
 

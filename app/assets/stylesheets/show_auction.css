@@ -1,3 +1,7 @@
+.topmargin {
+	margin-top: 10%;
+}
+
 div.panel {
 	overflow: hidden;
 }
@@ -5,13 +9,48 @@ div.panel {
 .nty-n-bottles-tile img{
 	height: 200px;
 	display: block;
-	margin: 0 auto;
+	margin: 30px auto;
 }
 .nty-n-bottles-tile h3{
 	font-size: 1.2rem;
 	margin: 0 auto;
 	width: 180px;
 }
+.nty-n-bottles-tile {
+	background-color: white;
+	border: none;
+	position: relative;
+	top: -30px;
+	max-height: 400px;
+}
+
 #beer-card {
-	width: 300 !important;
+	width: 300px;
+}
+
+.bottom-of-panel {
+	position: absolute;
+	bottom: 10px;
+	right: 12.5%;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 25px;
+	right: 17.5%;
+}
+
+.winning-bid {
+	background-color: #AEE239;
+}
+.winning-bid:hover {
+	background-color: #AEE239;
+}
+
+.custom-btn {
+	background-color: #40C0CB !important;
+}
+.custom-btn:hover {
+	background-color: #00A8C6
+}
 }
