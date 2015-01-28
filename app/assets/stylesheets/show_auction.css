@@ -27,3 +27,22 @@ div.panel {
 #beer-card {
 	width: 300px;
 }
+
+.bottom-of-panel {
+	position: absolute;
+	bottom: 10px;
+	right: 12.5%;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 25px;
+	right: 17.5%;
+}
+
+.winning-bid {
+	background-color: #AEE239;
+}
+.winning-bid:hover {
+	background-color: #AEE239;
+}

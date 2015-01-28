@@ -23,21 +23,17 @@
 								<p><%= auction.product.description %></p>
 							</div>
 						</center>
-						<% if auction.bids.empty? %>
-							<div class="small-12 columns">
-								<h3> Starting Price: <%= auction.minimum_price %> </h3>
-							</div>
-						<% end %>
 						<% if auction.highest_bidder == User.find_by(id: session[:user_id]) %>
-							<div class="small-12 columns auction-confirm-msg">
-								<h3>Congrats, You're in!</h3>
+							<div class="auction-confirm-msg bottom button small winning-bid">
+								<span>Highest Bidder</span>
 							</div>
 						<% else %>
-							<form action="/bids" method="post">
+							<form class="bottom-of-panel" action="/bids" method="post">
 								<input type="hidden" name="auction_id" value="<%= auction.id %>">
-								<input type="text" name="offer_price" placeholder="Minimum Bid $<%=auction.higest_bid + 1 %>.00">
+								<input class="center" type="text" name="offer_price" placeholder="Minimum $<%=auction.higest_bid + 1 %>.00">
 								<input class="button small center"id="button-place"type="submit" name="submit" value="Place Bid">
 							</form>
+	
 						<% end %>
 					</div>
 				</div>
