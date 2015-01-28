@@ -66,6 +66,10 @@
   background-color: white;
   height: 370px;
 }
+
+#faraaz{
+  width: 300px !important;
+}
 .card-content {
   position: relative;
   top: 10px;
