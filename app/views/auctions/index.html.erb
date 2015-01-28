@@ -5,21 +5,23 @@
 			<!-- loop starts here (the list items are the things that are going to be looped) -->
 		<% @auctions.each do |auction| %>	
 			<li class="beer-card">
-			<a href="/auctions/<%= auction.id%>">		
+			<!-- <a href="/auctions/<%= auction.id%>">		 -->
 				<div class="card" id="card_<%=auction.id%>">
 					<div class="row panel nty-n-bottles-tile front">
 						<div class="small-12 columns">
-							<h3><%= auction.product.name %></h3>
+							<center><h3><%= auction.product.name %></h3></center>
 						</div>
 						<div class="small-12 columns"> 
 							<img src="<%=auction.product.image_link%>" alt=""> <!-- add dat image hurrr -->
 						</div>
 					</div>
 					<div class="panel nty-n-bottles-tile back">
-						<p>this is supposed to be the back</p>
+						<center><div class="small-12 columns center-my-text">
+							<h3><%= auction.product.name %>  </h3>
+						</div></center>
 					</div>
 				</div>
-				</a>	
+				<!-- </a>	 -->
 			</li>
 		<% end %>
 			<!-- loop ends here -->

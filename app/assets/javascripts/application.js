@@ -18,11 +18,14 @@
 //= require_tree .
 
 $(function(){ $(document).foundation();
-	console.log("This should print")
+	// Splash page
 	revealLogin()
 	revealRegister()
 	founderCardFade()
 	stepsCardFade()
+
+	// Auctions index page
+	hideBackCards()
 })
 
 function revealLogin(){
@@ -59,4 +62,7 @@ function stepsCardFade(){
 	    }
 	})
 }
-$(function(){ $(document).foundation(); });
+
+function hideBackCards(){
+	$(".card").flip()
+}
