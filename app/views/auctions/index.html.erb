@@ -6,14 +6,17 @@
 		<% @auctions.each do |auction| %>	
 			<li class="beer-card">
 			<a href="/auctions/<%= auction.id%>">		
-				<div id="card">
-					<div class="row panel nty-n-bottles-tile">
+				<div class="card" id="card_<%=auction.id%>">
+					<div class="row panel nty-n-bottles-tile front">
 						<div class="small-12 columns">
 							<h3><%= auction.product.name %></h3>
 						</div>
 						<div class="small-12 columns"> 
 							<img src="<%=auction.product.image_link%>" alt=""> <!-- add dat image hurrr -->
 						</div>
+					</div>
+					<div class="panel nty-n-bottles-tile back">
+						<p>this is supposed to be the back</p>
 					</div>
 				</div>
 				</a>	
