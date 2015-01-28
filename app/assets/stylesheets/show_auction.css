@@ -17,6 +17,10 @@ div.panel {
 	width: 180px;
 }
 .nty-n-bottles-tile {
+	background-color: white !important;
+	border: none !important;
+	position: relative;
+	top: -30px;
 	max-height: 400px;
 }
 #beer-card {
