@@ -66,7 +66,7 @@ description: "The once strongest beer in the world is back! Brewed only once a
 year on December 6. Samichlaus is aged for 10 months before bottling. This beer is
  perhaps the rarest in the world. Samichlaus may be aged for many years to come. 
  Older vintages become more complex with a creamy warming finish. ",
-image_link: "http://i.imgur.com/r6SfISm.jpg"
+image_link: "http://i.imgur.com/lvKNdwA.png"
 )
 
 Product.create(
@@ -83,7 +83,7 @@ description: "Dark, rich and smoky…this classic porter is brewed with 63%
 German smoked malt and makes a perfect after dinner (or anytime) sipper for 
 those who love a “bigger” beer. Winner of the Gold Medal in the 2004 Great
  American Beer Festival® for best Smoked Beer in America! ",
-image_link: "http://i.imgur.com/hEP1Pxl.jpg"
+image_link: "http://i.imgur.com/z488iLy.png"
 )
 
 Product.all.each do |product|
