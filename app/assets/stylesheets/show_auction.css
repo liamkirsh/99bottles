@@ -33,6 +33,12 @@ div.panel {
 	bottom: 10px;
 	right: 12.5%;
 }
+h2.hide {
+	visibility: none;
+}
+img.hide {
+	visibility: none;
+}
 
 .bottom {
 	position: absolute;
@@ -52,5 +58,4 @@ div.panel {
 }
 .custom-btn:hover {
 	background-color: #00A8C6
-}
 }

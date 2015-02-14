@@ -23,10 +23,24 @@ $(function(){ $(document).foundation();
 	revealRegister()
 	founderCardFade()
 	stepsCardFade()
-
 	// Auctions index page
 	hideBackCards()
+	onCardHover()
 })
+function onCardHover(){
+	$( ".card" ).hover(
+	  function() {
+	  	$('img', this).addClass('hide')
+	  	$('h3', this).addClass('hide')
+	  	console.log("Hovering")
+	  }, function() {
+	  	$('img', this).removeClass('hide')
+	  	$('h3', this).removeClass('hide')
+	  	console.log("Off hover")
+	  }
+	);
+}
+
 
 function revealLogin(){
 	$(".login-btn a").click(function(event) {
